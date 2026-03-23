@@ -1,0 +1,9 @@
+# ignore everything
+*
+
+# allow ONLY this folder (change name accordingly)
+!Exception-Handling/
+!Exception-Handling/**
+
+# allow gitignore
+!.gitignore

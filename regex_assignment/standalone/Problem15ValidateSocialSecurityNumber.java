@@ -1,0 +1,12 @@
+import java.util.regex.Pattern;
+
+public class Problem15ValidateSocialSecurityNumber {
+    public static void main(String[] args) {
+        String regex = "^\\d{3}-\\d{2}-\\d{4}$";
+        String[] ssns = {"123-45-6789", "123456789", "987-65-4321"};
+
+        for (String ssn : ssns) {
+            System.out.println(ssn + " -> " + (Pattern.matches(regex, ssn) ? "Valid" : "Invalid"));
+        }
+    }
+}
